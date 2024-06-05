@@ -114,6 +114,32 @@ console.log(Boolean("Hallo"));// Ausgabe: true
 console.log(Boolean(""));    // Ausgabe: false
 ```
 
+### `typeof` Operator
+
+Der `typeof` Operator wird verwendet, um den Datentyp einer Variablen oder eines Wertes in JavaScript zu bestimmen. Hier sind einige Beispiele:
+
+#### Zahlen
+```javascript
+let a = 42;
+let b = 3.14;
+console.log(typeof a); // Ausgabe: 'number'
+console.log(typeof b); // Ausgabe: 'number'
+```
+
+#### Strings
+```javascript
+let c = 'Hallo Welt';
+console.log(typeof c); // Ausgabe: 'string'
+```
+
+#### Booleans
+```javascript
+let d = true;
+let e = false;
+console.log(typeof d); // Ausgabe: 'boolean'
+console.log(typeof e); // Ausgabe: 'boolean'
+```
+
 ### If/Else
 ```javascript
 let text = 'Ein willkuerlicher Text der evtl ausgegeben werden soll';
@@ -248,17 +274,7 @@ for (let i of [1, 2, 3]) {
 // 3
 ```
 
-Oder über Objekte:
-```javascript
-for (let i of t) {
-    console.log(i);
-}
-// Ausgabe: 
-// 1
-// Hallo
-```
-
-Am häufigsten möchte man über eine Reihe von Zahlen iterieren, dafür gibt es `for` Schleifen:
+Am häufigsten möchte man über eine Reihe von Zahlen iterieren, dafür gibt es `for` Loops:
 ```javascript
 for (let i = 0; i < 5; i++) {
     console.log(i);
@@ -300,7 +316,7 @@ while (i < 5) {
 // 4
 ```
 
-`while` ist besonders gut für Endlosschleifen zusammen mit dem Keyword `break`, das die aktuelle Schleife beendet:
+`while` ist besonders gut für endlose Loops zusammen mit dem Keyword `break`, das den aktuellen Loop beendet:
 ```javascript
 let i = 0;
 
