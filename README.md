@@ -179,27 +179,29 @@ Diese Einführung sollte Ihnen einen grundlegenden Überblick über den Umgang m
 
 Certainly! Here's the extended tutorial translated into JavaScript and formatted in Markdown:
 
+Natürlich! Hier ist der Teil für Arrays in JavaScript umgeschrieben und erweitert, um die Konzepte klarer zu machen:
+
 ## Mehr Datentypen
 
-### Listen
-Listen halten mehrere verschiedene Werte:
+### Arrays
+Arrays halten mehrere verschiedene Werte:
 ```javascript
 let l = [1, 2, 3];
 console.log(l); // Ausgabe: [1, 2, 3]
 ```
 
-Listen können ganz verschiedene Datentypen enthalten:
+Arrays können ganz verschiedene Datentypen enthalten:
 ```javascript
 console.log([1, 2.0, "Hallo Welt"]); // Ausgabe: [1, 2.0, 'Hallo Welt']
 ```
 ...was nicht heißt, dass man das oft benutzt oder tun sollte.
 
-Das schon genannte `length` funktioniert auch für Listen:
+Das schon genannte `length` funktioniert auch für Arrays:
 ```javascript
 console.log(l.length); // Ausgabe: 3
 ```
 
-Listen können verändert werden:
+Arrays können verändert werden:
 ```javascript
 l.push(5);
 console.log(l); // Ausgabe: [1, 2, 3, 5]
@@ -210,7 +212,7 @@ l[2] = 18;
 console.log(l); // Ausgabe: [1, 2, 18, 5]
 ```
 
-### Tupel
+### Arrays als Rückgabewerte
 JavaScript hat keine eingebaute Tupel-Datenstruktur wie Python. Stattdessen verwendet man Arrays, um mehrere Werte zurückzugeben:
 ```javascript
 function baz() {
@@ -223,7 +225,7 @@ console.log(typeof t); // Ausgabe: object
 console.log(t[0]); // Ausgabe: 1
 ```
 
-Arrays sind veränderlich, aber für unveränderliche Arrays kann man Object.freeze verwenden:
+Arrays sind veränderlich, aber für unveränderliche Arrays kann man `Object.freeze` verwenden:
 ```javascript
 let frozenT = Object.freeze([1, "Hallo"]);
 frozenT[1] = "Welt"; // Keine Wirkung, da das Array gefroren ist
@@ -236,6 +238,92 @@ let [a, b] = t;
 console.log(a); // Ausgabe: 1
 console.log(b); // Ausgabe: Hallo
 ```
+
+### Iterieren über Arrays
+Man kann über Arrays mit verschiedenen Schleifen und Methoden iterieren.
+
+#### For-Schleife
+```javascript
+for (let i = 0; i < l.length; i++) {
+    console.log(l[i]);
+}
+// Ausgabe: 
+// 1
+// 2
+// 18
+// 5
+```
+
+#### For...of-Schleife
+```javascript
+for (let value of l) {
+    console.log(value);
+}
+// Ausgabe: 
+// 1
+// 2
+// 18
+// 5
+```
+
+#### forEach-Methode
+```javascript
+l.forEach((value, index) => {
+    console.log(index, value);
+});
+// Ausgabe: 
+// 0 1
+// 1 2
+// 2 18
+// 3 5
+```
+
+### Weitere nützliche Array-Methoden
+Es gibt viele nützliche Methoden, um mit Arrays zu arbeiten.
+
+#### map
+Erstellt ein neues Array mit den Ergebnissen einer angewendeten Funktion auf jedes Element des Arrays.
+```javascript
+let doubled = l.map(x => x * 2);
+console.log(doubled); // Ausgabe: [2, 4, 36, 10]
+```
+
+#### filter
+Erstellt ein neues Array mit allen Elementen, die eine bestimmte Bedingung erfüllen.
+```javascript
+let even = l.filter(x => x % 2 === 0);
+console.log(even); // Ausgabe: [2, 18]
+```
+
+#### reduce
+Reduziert ein Array auf einen einzigen Wert, indem es eine Funktion auf jedes Element anwendet und das Ergebnis akkumuliert.
+```javascript
+let sum = l.reduce((acc, x) => acc + x, 0);
+console.log(sum); // Ausgabe: 26
+```
+
+#### includes
+Überprüft, ob ein Array ein bestimmtes Element enthält.
+```javascript
+console.log(l.includes(18)); // Ausgabe: true
+console.log(l.includes(42)); // Ausgabe: false
+```
+
+#### find
+Findet das erste Element im Array, das eine bestimmte Bedingung erfüllt.
+```javascript
+let found = l.find(x => x > 10);
+console.log(found); // Ausgabe: 18
+```
+
+#### sort
+Sortiert die Elemente eines Arrays.
+```javascript
+let sorted = [...l].sort((a, b) => a - b);
+console.log(sorted); // Ausgabe: [1, 2, 5, 18]
+```
+
+Diese Einführung sollte Ihnen einen grundlegenden Überblick über den Umgang mit Arrays in JavaScript geben!
 
 ### Schleifen
 
