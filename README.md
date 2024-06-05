@@ -83,14 +83,14 @@ let a = parseInt('5');
 console.log(a, typeof a); // Ausgabe: 5 'number'
 ```
 
-### Bools
-Die einzigen Werte von bools sind:
+### Booleans
+Die einzigen Werte von booleans sind:
 ```javascript
 console.log(true);  // Ausgabe: true
 console.log(false); // Ausgabe: false
 ```
 
-Bools sind das Ergebnis z.B. von Vergleichen:
+Booleans sind das Ergebnis z.B. von Vergleichen:
 ```javascript
 console.log(1 == 1);           // Ausgabe: true
 console.log(2 >= 3);       // Ausgabe: false
@@ -99,7 +99,7 @@ console.log(1 <= 0.5);         // Ausgabe: false
 console.log(2 > 0);            // Ausgabe: true
 ```
 
-Man kann bools auch mit `&&` und `||` kombinieren:
+Man kann booleans auch mit `&&` und `||` kombinieren:
 ```javascript
 console.log(true && true);   // Ausgabe: true
 console.log(true && false);  // Ausgabe: false
