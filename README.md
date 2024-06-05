@@ -67,19 +67,6 @@ Und dividieren:
 console.log(8 / 4); // Ausgabe: 2
 ```
 
-Hier sehen wir auch, dass es zwei verschiedene Typen von Zahlen gibt:
-```javascript
-console.log(typeof 2); // Ausgabe: 'number'
-console.log(typeof 2.0); // Ausgabe: 'number'
-```
-
-In JavaScript sind alle Zahlen vom Typ `number`.
-
-Die Ergebnisse von Division sind immer `number`:
-```javascript
-console.log(0.5 + 0.25); // Ausgabe: 0.75
-```
-
 Ganzzahlige Division kann mit `Math.floor` erreicht werden:
 ```javascript
 console.log(Math.floor(14 / 3)); // Ausgabe: 4
@@ -106,7 +93,7 @@ console.log(false); // Ausgabe: false
 Bools sind das Ergebnis z.B. von Vergleichen:
 ```javascript
 console.log(1 == 1);           // Ausgabe: true
-console.log(2.0 >= 3.0);       // Ausgabe: false
+console.log(2 >= 3);       // Ausgabe: false
 console.log('Hallo' != 'Welt');// Ausgabe: true
 console.log(1 <= 0.5);         // Ausgabe: false
 console.log(2 > 0);            // Ausgabe: true
