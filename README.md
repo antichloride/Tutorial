@@ -301,9 +301,6 @@ while (true) {
 ### Übungen
 
 #### Strings und Zahlen in JavaScript
-Natürlich! Hier sind die beiden Aufgaben im Markdown-Format:
-
-## Übung: Einfache String-Manipulationen in JavaScript
 
 ### Aufgabe 1: String in Großbuchstaben umwandeln
 
