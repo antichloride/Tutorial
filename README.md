@@ -298,7 +298,7 @@ while (true) {
 // 4
 ```
 
-### Übungen
+## Übungen
 
 #### Strings und Zahlen in JavaScript
 
