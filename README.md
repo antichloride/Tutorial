@@ -404,7 +404,7 @@ const datalist = ['kühlschränke_fabian.pptx','bohrmaschinen_robin.pptx', 'geb_
 ```
 #### Tipps:
 
-- [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_NOT]
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_NOT
 - [String.prototype.includes()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes)
 - [Array.prototype.filter()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
 
