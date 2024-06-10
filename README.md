@@ -377,7 +377,7 @@ let b = 4;
 Der Rest von 17 geteilt durch 4 ist: 1
 ```
 
-### Zusatzaufgabe: Zeichen ersetzen
+### Fleißaufgabe: Zeichen ersetzen
 
 Schreiben Sie ein Programm, das alle Vorkommen eines bestimmten Zeichens in einem String durch ein anderes Zeichen ersetzt. Verwenden Sie den String `str`, das Zeichen `oldChar` und das Zeichen `newChar`.
 
