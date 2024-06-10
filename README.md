@@ -176,6 +176,7 @@ let ausgabe = false;
 if (!ausgabe) {
     console.log("Die Ausgabe ist nicht aktiviert."); // Ausgabe: Die Ausgabe ist nicht aktiviert.
 }
+```
 
 ### Funktionen
 Funktionen sind ähnlich zu mathematischen Funktionen, sie nehmen Argumente und geben Ergebnisse zurück. Ein Beispiel ist die eingebaute Funktion `length`. Es gibt weitere bereits in JavaScript definierte Funktionen:
