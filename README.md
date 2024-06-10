@@ -232,26 +232,6 @@ l[2] = 18;
 console.log(l); // Ausgabe: [1, 2, 18, 5]
 ```
 
-### Arrays als Rückgabewerte
-JavaScript hat keine eingebaute Tupel-Datenstruktur wie Python. Stattdessen verwendet man Arrays, um mehrere Werte zurückzugeben:
-```javascript
-function baz() {
-    return [1, "Hallo"];
-}
-
-let t = baz();
-console.log(t); // Ausgabe: [1, 'Hallo']
-console.log(typeof t); // Ausgabe: object
-console.log(t[0]); // Ausgabe: 1
-```
-
-Arrays sind veränderlich, aber für unveränderliche Arrays kann man `Object.freeze` verwenden:
-```javascript
-let frozenT = Object.freeze([1, "Hallo"]);
-frozenT[1] = "Welt"; // Keine Wirkung, da das Array gefroren ist
-console.log(frozenT); // Ausgabe: [1, 'Hallo']
-```
-
 Diese Einführung sollte Ihnen einen grundlegenden Überblick über den Umgang mit Arrays in JavaScript geben!
 
 ### Loops
