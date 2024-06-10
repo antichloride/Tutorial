@@ -1,5 +1,3 @@
-Sure, here is the tutorial in Markdown format:
-
 ## Datentypen
 
 ### Strings
