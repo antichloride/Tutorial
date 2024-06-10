@@ -167,6 +167,16 @@ if (zahl < 5) {
 // Ausgabe: Die Zahl ist 5.
 ```
 
+Der NOT-Operator (`!`) wird verwendet, um den Wahrheitswert einer Variable umzukehren. Wenn er vor einen Ausdruck gesetzt wird, wird der Ausdruck zu seinem gegenteiligen Wert. 
+
+Beispiel:
+```javascript
+let ausgabe = false;
+
+if (!ausgabe) {
+    console.log("Die Ausgabe ist nicht aktiviert."); // Ausgabe: Die Ausgabe ist nicht aktiviert.
+}
+
 ### Funktionen
 Funktionen sind ähnlich zu mathematischen Funktionen, sie nehmen Argumente und geben Ergebnisse zurück. Ein Beispiel ist die eingebaute Funktion `length`. Es gibt weitere bereits in JavaScript definierte Funktionen:
 ```javascript
@@ -198,8 +208,6 @@ Verwendung der Funktion `bar`:
 console.log(bar(2));    // Ausgabe: 6
 console.log(bar(2, 0)); // Ausgabe: 1
 ```
-
-Natürlich! Hier ist der Teil für Arrays in JavaScript umgeschrieben und erweitert, um die Konzepte klarer zu machen:
 
 ## Mehr Datentypen
 
