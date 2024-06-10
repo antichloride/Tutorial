@@ -402,6 +402,11 @@ Gegeben ist eine Liste von Dateinamen. Die Dateinamen enthalten Namen von Person
 ```javascript
 const datalist = ['kühlschränke_fabian.pptx','bohrmaschinen_robin.pptx', 'geb_robin_final.pptx', 'schleifsteinsteffen.pptx', 'badewasserqualitaet_marco-2019', 'franzi_stuggi.pdf', 'gfk_entsorgung.katha.pdf']
 ```
+#### Tipps
+
+- [String.prototype.includes()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes)
+- [Array.prototype.filter()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
+
 #### Additional Task: Filtering presentations EXTRA
 
 Erweitern Sie die Funktion jetzt um ein weiteres Argument, das es erlaubt eine Liste von Dateinamen zu übergeben, die ebenfalls nicht ausgewählt werden dürfen. 
