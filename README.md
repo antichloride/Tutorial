@@ -336,135 +336,67 @@ while (true) {
 
 ### Übungen
 
-#### Datentypen
+#### Strings und Zahlen in JavaScript
 
-##### Strings
-JavaScript ist eine objektorientierte Sprache. Alle Dinge in JavaScript sind Objekte. Objekte können Methoden haben. Methoden sind Funktionen, die zu einem Objekt gehören und es selbst immer implizit als Argument haben:
+### Aufgabe 1: Zeichen zählen
+
+Schreiben Sie ein Programm, das die Anzahl der Vorkommen eines bestimmten Zeichens in einem String zählt. Verwenden Sie den String `str` und das Zeichen `char`.
+
+**Vorgaben:**
 ```javascript
-let s = 'Hallo Welt';
-console.log(s); // Ausgabe: Hallo Welt
-console.log(s.toUpperCase()); // Ausgabe: 'HALLO WELT'
+let str = "JavaScript ist großartig!";
+let char = 'a';
 ```
 
-Schau dir die Methoden an, die Strings haben, und fülle die Lücken:
-```javascript
-let s = "   dies ist eIn hässLicher TEXT       ";
-s = s.trim().toLowerCase().replace(/(?:^|\s)\S/g, function(a) { return a.toUpperCase(); });
-console.log(s);
+**Erwartete Ausgabe:**
+```
+Das Zeichen 'a' kommt 3 Mal in dem String vor.
 ```
 
-##### Zahlen
-Untersuche welchen Typ Summen oder Produkte von ints und floats haben:
+### Aufgabe 2: Zeichen ersetzen
+
+Schreiben Sie ein Programm, das alle Vorkommen eines bestimmten Zeichens in einem String durch ein anderes Zeichen ersetzt. Verwenden Sie den String `str`, das Zeichen `oldChar` und das Zeichen `newChar`.
+
+**Vorgaben:**
 ```javascript
-let a = 1;
-let b = 2.0;
-console.log(typeof a); // Ausgabe: number
-console.log(typeof b); // Ausgabe: number
+let str = "Hallo Welt!";
+let oldChar = 'l';
+let newChar = 'x';
 ```
 
-Was ist das Problem an:
-```javascript
-console.log(0.1 + 0.2 === 0.3); // Ausgabe: false
+**Erwartete Ausgabe:**
+```
+Haxxo Wext!
 ```
 
-JavaScript unterstützt keine komplexen Zahlen direkt. Man kann jedoch Bibliotheken wie `math.js` verwenden, um damit zu arbeiten.
+### Aufgabe 3: Durchschnitt berechnen
 
-#### Funktionen
-Definiere eine Funktion `fizzbazz` die folgende Bedingungen erfüllt:
-Falls eine Zahl durch 3 teilbar ist gebe 'Fizz' aus, falls die Zahl durch 5 teilbar ist gebe 'Bazz' aus, falls sie durch 3 und 5 teilbar ist gebe 'FizzBazz' aus, sonst gebe die Zahl zurück:
+Schreiben Sie ein Programm, das den Durchschnitt von vier Zahlen berechnet und das Ergebnis auf der Konsole ausgibt. Verwenden Sie die Zahlen `num1`, `num2`, `num3` und `num4`.
+
+**Vorgaben:**
 ```javascript
-function fizzbazz(n) {
-    if (n % 3 === 0 && n % 5 === 0) return 'FizzBazz';
-    if (n % 3 === 0) return 'Fizz';
-    if (n % 5 === 0) return 'Bazz';
-    return n;
-}
+let num1 = 5;
+let num2 = 10;
+let num3 = 15;
+let num4 = 20;
 ```
 
-Definiere eine Funktion `colatz`, die folgende Bedingungen erfüllt:
-`colatz` nimmt ein Int `n`, muss größer als 0 sein.
-- wenn `n` gerade ist, gib `n / 2` zurück
-- wenn `n` ungerade ist, gib `3n + 1` zurück
-
-```javascript
-function colatz(n) {
-    if (n <= 0) throw new Error("n must be greater than 0");
-    return n % 2 === 0 ? n / 2 : 3 * n + 1;
-}
+**Erwartete Ausgabe:**
+```
+Der Durchschnitt ist: 12.5
 ```
 
-#### Schleifen
+### Aufgabe 4: Modulo-Berechnung
+
+Schreiben Sie ein Programm, das den Rest berechnet, wenn eine Zahl `a` durch eine Zahl `b` geteilt wird. Geben Sie das Ergebnis auf der Konsole aus.
+
+**Vorgaben:**
 ```javascript
-let strings = ["Dies", "ist", "eine", "Liste", "von", "mehreren", "Wörtern"];
-
-// Iteriere über die obige Liste
-for (let s of strings) {
-    console.log(s);
-}
-
-// Iteriere danach über sorted(strings)
-for (let s of strings.slice().sort()) {
-    console.log(s);
-}
-
-// Iteriere über reversed(strings)
-for (let s of strings.slice().reverse()) {
-    console.log(s);
-}
-
-// Iteriere über enumerate(strings)
-strings.forEach((s, i) => console.log(i, s));
+let a = 17;
+let b = 4;
 ```
 
-#### Timer
-Schreibe einen Sekundenzähler(Countdown), der bis zu einer Stopzeit zählt und bei der Hälfte der Zeit anstatt der Zahl "Half way through" ausgibt. Nach Ablauf der Zeit soll noch ein "Puh, we are done! Nice job!" stehen. Du kannst mit `setTimeout` eine Sekunde warten bevor der nächste Schritt ausgeführt wird.
-
-```javascript
-function timer(stopTime) {
-    let halfTime = Math.floor(stopTime / 2);
-    let count = 0;
-
-    let interval = setInterval(() => {
-        if (count === halfTime) {
-            console.log("Half way through");
-        } else if (count >= stopTime) {
-            console.log("Puh, we are done! Nice job!");
-            clearInterval(interval);
-        } else {
-            console.log(count);
-        }
-        count++;
-    }, 1000);
-}
-
-timer(10);
+**Erwartete Ausgabe:**
 ```
-
-#### Datenauswertung
-Die Liste 'test_data' enthält Messwerte mit der Kantenlänge eines Würfels. Allerdings enthält sie auch 'NaN (Not a Number)' - Werte. Als ersten Schritt entferne die NaN Werte und gebe eine neue Liste ohne diese aus.
-Schreibe anschließend eine zweite Funktion, die aus den gemessenen Werten die Dichte des Stoffes berechnet und diese mittelt. Aus dem Mittelwert und den einzelnen Werten berechne die Standardabweichung. Die Funktion soll nun die gemittelte Dichte und den dazugehörigen Fehler ausgeben.
-
-```javascript
-function clean(data) {
-    return data.filter(value => !isNaN(value));
-}
-
-function evaluate(data, m) {
-    let cleanedData = clean(data);
-    let densities = cleanedData.map(r => m / (r ** 3));
-    let meanDensity = densities.reduce((sum, value) => sum + value, 0) / densities.length;
-
-    let variance = densities.reduce((sum, value) => sum + ((value - meanDensity) ** 2), 0) / densities.length;
-    let stdDev = Math.sqrt(variance);
-
-    return {
-        meanDensity: meanDensity,
-        error: stdDev
-    };
-}
-
-let test_data = [1, 2, NaN, 3, 4, NaN, 5];
-console.log(evaluate(test_data, 10));
+Der Rest von 17 geteilt durch 4 ist: 1
 ```
-
-Diese Einführung sollte Ihnen einen grundlegenden Überblick über den Umgang mit Listen, Tupel, Schleifen und Funktionen in JavaScript geben!
