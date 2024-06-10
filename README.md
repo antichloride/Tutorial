@@ -261,18 +261,6 @@ for (let i = 0; i < 5; i++) {
 // 4
 ```
 
-Oder mit einem Schrittwert:
-```javascript
-for (let j = 10; j < 30; j += 5) {
-    console.log(j);
-}
-// Ausgabe: 
-// 10
-// 15
-// 20
-// 25
-```
-
 #### While
 `while` iteriert so lange wie ein Konditional `true` ist:
 ```javascript
