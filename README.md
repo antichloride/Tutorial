@@ -199,10 +199,6 @@ console.log(bar(2));    // Ausgabe: 6
 console.log(bar(2, 0)); // Ausgabe: 1
 ```
 
-Diese Einführung sollte Ihnen einen grundlegenden Überblick über den Umgang mit Strings, Zahlen, Booleans, Kontrollstrukturen und Funktionen in JavaScript geben!
-
-Certainly! Here's the extended tutorial translated into JavaScript and formatted in Markdown:
-
 Natürlich! Hier ist der Teil für Arrays in JavaScript umgeschrieben und erweitert, um die Konzepte klarer zu machen:
 
 ## Mehr Datentypen
