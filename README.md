@@ -301,8 +301,39 @@ while (true) {
 ### Übungen
 
 #### Strings und Zahlen in JavaScript
+Natürlich! Hier sind die beiden Aufgaben im Markdown-Format:
 
-### Aufgabe 1: Zeichen zählen
+## Übung: Einfache String-Manipulationen in JavaScript
+
+### Aufgabe 1: String in Großbuchstaben umwandeln
+
+Schreiben Sie ein Programm, das einen String `str` in Großbuchstaben umwandelt und das Ergebnis auf der Konsole ausgibt.
+
+**Vorgaben:**
+```javascript
+let str = "Hallo Welt!";
+```
+
+**Erwartete Ausgabe:**
+```
+HALLO WELT!
+```
+
+### Aufgabe 2: Ersten Buchstaben eines Strings in Großbuchstaben umwandeln
+
+Schreiben Sie ein Programm, das den ersten Buchstaben eines Strings `str` in Großbuchstaben umwandelt und das Ergebnis auf der Konsole ausgibt.
+
+**Vorgaben:**
+```javascript
+let str = "hallo welt!";
+```
+
+**Erwartete Ausgabe:**
+```
+Hallo welt!
+```
+
+### Aufgabe 3: Zeichen zählen
 
 Schreiben Sie ein Programm, das die Anzahl der Vorkommen eines bestimmten Zeichens in einem String zählt. Verwenden Sie den String `str` und das Zeichen `char`.
 
@@ -317,23 +348,7 @@ let char = 'a';
 Das Zeichen 'a' kommt 3 Mal in dem String vor.
 ```
 
-### Aufgabe 2: Zeichen ersetzen
-
-Schreiben Sie ein Programm, das alle Vorkommen eines bestimmten Zeichens in einem String durch ein anderes Zeichen ersetzt. Verwenden Sie den String `str`, das Zeichen `oldChar` und das Zeichen `newChar`.
-
-**Vorgaben:**
-```javascript
-let str = "Hallo Welt!";
-let oldChar = 'l';
-let newChar = 'x';
-```
-
-**Erwartete Ausgabe:**
-```
-Haxxo Wext!
-```
-
-### Aufgabe 3: Durchschnitt berechnen
+### Aufgabe 4: Durchschnitt berechnen
 
 Schreiben Sie ein Programm, das den Durchschnitt von vier Zahlen berechnet und das Ergebnis auf der Konsole ausgibt. Verwenden Sie die Zahlen `num1`, `num2`, `num3` und `num4`.
 
@@ -350,7 +365,7 @@ let num4 = 20;
 Der Durchschnitt ist: 12.5
 ```
 
-### Aufgabe 4: Modulo-Berechnung
+### Aufgabe 5: Modulo-Berechnung
 
 Schreiben Sie ein Programm, das den Rest berechnet, wenn eine Zahl `a` durch eine Zahl `b` geteilt wird. Geben Sie das Ergebnis auf der Konsole aus.
 
@@ -363,4 +378,20 @@ let b = 4;
 **Erwartete Ausgabe:**
 ```
 Der Rest von 17 geteilt durch 4 ist: 1
+```
+
+### Zusatzaufgabe: Zeichen ersetzen
+
+Schreiben Sie ein Programm, das alle Vorkommen eines bestimmten Zeichens in einem String durch ein anderes Zeichen ersetzt. Verwenden Sie den String `str`, das Zeichen `oldChar` und das Zeichen `newChar`.
+
+**Vorgaben:**
+```javascript
+let str = "Hallo Welt!";
+let oldChar = 'l';
+let newChar = 'x';
+```
+
+**Erwartete Ausgabe:**
+```
+Haxxo Wext!
 ```
