@@ -377,7 +377,7 @@ let b = 4;
 Der Rest von 17 geteilt durch 4 ist: 1
 ```
 
-### Fleißaufgabe: Zeichen ersetzen
+### Aufgabe 6: Zeichen ersetzen
 
 Schreiben Sie ein Programm, das alle Vorkommen eines bestimmten Zeichens in einem String durch ein anderes Zeichen ersetzt. Verwenden Sie den String `str`, das Zeichen `oldChar` und das Zeichen `newChar`.
 
@@ -392,3 +392,20 @@ let newChar = 'x';
 ```
 Haxxo Wext!
 ```
+
+## The Challenge
+
+### Task: Filtering presentations
+
+Gegeben ist eine Liste von Dateinamen. Die Dateinamen enthalten Namen von Personen. Schreiben Sie eine Funktion, die als Argument den Namen einer Person bekommt. Die Funktion soll dann einen zufällig gewählten Dateinamen zurückgeben, der nicht den Namen der Person enthalten darf. 
+
+```javascript
+const datalist = ['kühlschränke_fabian.pptx','bohrmaschinen_robin.pptx', 'geb_robin_final.pptx', 'schleifsteinsteffen.pptx', 'badewasserqualitaet_marco-2019', 'franzi_stuggi.pdf', 'gfk_entsorgung.katha.pdf']
+```
+#### Additional Task: Filtering presentations EXTRA
+
+Erweitern Sie die Funktion jetzt um ein weiteres Argument, das es erlaubt eine Liste von Dateinamen zu übergeben, die ebenfalls nicht ausgewählt werden dürfen. 
+
+#### Additional addtional Task: Filtering presentations EXTRA XXL
+
+Verfassen Sie nun ein script, das die Dateinamen aus einem gegebenen Ordner extrahiert und die ausgewählte Datei unter einem anonymen Namen in einen anderen Ordner kopiert. In diesem Fall ist die Verwendung von Programmiersprachen wie Python, R, C++, C, Fortran, Java, php, haskell oder Rust erlaubt 🦐🦧🦃🐁
